@@ -9,4 +9,7 @@ class encryptor:
     def encrypt_from_string(self, data):
         nonce = os.urandom(12)
         ciphertext = self.worker.encrypt(nonce, data, None)
-        return nonce, ciphertext
+        return [nonce, ciphertext]
+    
+    def decrypt(self, nonce, cipher):
+        return self.worker.decrypt(nonce, cipher, None)
