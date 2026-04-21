@@ -13,3 +13,4 @@ This is our group project for CPSC 362. (Work In Progress)
 ```bash
 sudo apt install python3-tk
 sudo apt install xdotool
+pip install -r packages.txt
