@@ -32,8 +32,11 @@ class encryptor:
     def encrypt_to_file(self, data, filename):
         nonce, ciphertext = self.encrypt_from_string(data)
 
-        with open(filename, "wb") as f:
-            f.write(nonce + ciphertext)
+        with open(filename, "ab") as f:
+            f.write(len(nonce).to_bytes(1, "big"))
+            f.write(nonce)
+            f.write(len(ciphertext).to_bytes(4, "big"))
+            f.write(ciphertext)
 
     def decrypt_from_file(self, filename):
         # read length-prefixed encrypted entries from a file and decrypt them

@@ -7,3 +7,8 @@ ciphertext = returns[1]
 
 print(encryptor.decrypt(nonce, ciphertext).decode('utf-8'))
 encryptor.encrypt_to_file(b"secret secret secret", "hi.enc")
+
+# decrypt from file example
+keystrokes = encryptor.decrypt_from_file("hi.enc")
+for entry in keystrokes:
+    print(entry)
