@@ -40,13 +40,20 @@ def main():
     print("Keystroke listener starting...")
     print("Press Ctrl+C to stop.\n")
 
-    from pynput.keyboard import Listener
+    from pynput.keyboard import Listener, Key
 
     def handle_key(key):
+        if key == Key.esc:
+            print("\nEsc pressed, stopping listener...")
+            return False
         on_keystroke(key, enc, logs_manager)
 
     with Listener(on_press=handle_key) as listener:
-        listener.join()
+        try:
+            listener.join()
+        except KeyboardInterrupt:
+            listener.stop()
+            print("\nStopped.")
 
 
 if __name__ == "__main__":
