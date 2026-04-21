@@ -7,3 +7,6 @@ This is our group project for CPSC 362. (Work In Progress)
 * Developer: Samantha Herrera | sherrera607@csu.fullerton.edu
 * Developer: Johnny Hoang | johnnyhoang@csu.fullerton.edu
 * Developer: Sara Staats | sarah.staats@csu.fullerton.edu
+
+# Prerequisites
+* Please run the following commands in order to download the needed dependencies
