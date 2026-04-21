@@ -7,3 +7,10 @@ This is our group project for CPSC 362. (Work In Progress)
 * Developer: Samantha Herrera | sherrera607@csu.fullerton.edu
 * Developer: Johnny Hoang | johnnyhoang@csu.fullerton.edu
 * Developer: Sara Staats | sarah.staats@csu.fullerton.edu
+
+# Prerequisites
+* Please run the following commands in order to download the needed dependencies
+```bash
+sudo apt install python3-tk
+sudo apt install xdotool
+pip install -r packages.txt
