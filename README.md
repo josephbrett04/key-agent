@@ -10,3 +10,6 @@ This is our group project for CPSC 362. (Work In Progress)
 
 # Prerequisites
 * Please run the following commands in order to download the needed dependencies
+```bash
+sudo apt install python3-tk
+sudo apt install xdotool
