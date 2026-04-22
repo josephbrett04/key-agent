@@ -18,3 +18,9 @@ sudo apt install python3-tk
 
 # 2. Install the required Python packages
 pip install keyboard cryptography
+
+## How To Run
+* Make sure to add "sudo" before running the app for secuirty reasons and for the app to work properply
+
+```bash
+sudo python3 main.py
